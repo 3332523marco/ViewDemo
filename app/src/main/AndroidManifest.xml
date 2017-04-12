@@ -18,7 +18,7 @@
         </activity>
         <activity
             android:name=".ui.AppBarActivity" />
-
+        <activity android:name=".ui.TouchActivity"/>
     </application>
 
 </manifest>

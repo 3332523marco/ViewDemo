@@ -21,11 +21,14 @@ public class MainActivity extends BaseActivity {
 
     }
 
-    @OnClick(R.id.listbtn)
-    void onClick(View view) {
-        switch(view.getId()){
+    @OnClick({R.id.listbtn, R.id.viewbtn})
+    public void onClick(View view) {
+        switch (view.getId()) {
             case R.id.listbtn:
-                startActivity(new Intent(mContext,AppBarActivity.class));
+                startActivity(new Intent(mContext, AppBarActivity.class));
+                break;
+            case R.id.viewbtn:
+                startActivity(new Intent(mContext, TouchActivity.class));
                 break;
         }
     }
