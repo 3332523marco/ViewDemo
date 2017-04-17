@@ -78,7 +78,7 @@ public class AppBarActivity extends BaseActivity implements CustomAdapter.onAdap
         /**
          * 解决swipe和appBarLayout滑动冲突
          */
-        mSwipe.setEnabled(i == 0);
+        mSwipe.setEnabled(false);
     }
 
     @Override
