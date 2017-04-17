@@ -15,12 +15,10 @@ import shengyuan.viewdemo.ui.TouchActivity;
 public class CustomViewGroup extends RelativeLayout  implements GestureDetector.OnGestureListener {
 
     private GestureDetector detector;
-    private Context mContext;
 
     public CustomViewGroup(Context context, AttributeSet attrs) {
         super(context, attrs);
-        mContext = context;
-        detector = new GestureDetector(this);
+        detector = new GestureDetector(context,this);
     }
 
     public CustomViewGroup(Context context) {
